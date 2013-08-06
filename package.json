@@ -1,0 +1,23 @@
+{
+  "name": "redirect-https-server",
+  "version": "0.1.0",
+  "description": "Simple HTTP to HTTPS redirecting server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Sendanor/redirect-https-server.git"
+  },
+  "dependencies": {
+    "ejs": "*"
+  },
+  "author": "Jaakko-Heikki Heusala <jheusala@iki.fi>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sendanor/redirect-https-server/issues"
+  },
+  "private":true
+}
