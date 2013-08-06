@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "forever start --append -w --watchDirectory src -l forever-redirect-http-server.log -o logs/out.log -e logs/error.log --spinSleepTime 5000 --minUptime 1000 src/app.js",
+    "stop": "forever stop src/app.js",
+    "restart": "forever restart src/app.js"
   },
   "repository": {
     "type": "git",
